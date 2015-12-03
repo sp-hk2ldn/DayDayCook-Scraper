@@ -11,6 +11,12 @@ namespace :dayday do
       html_doc = Nokogiri::HTML(open(url).read)
       name = html_doc.css('.recipe_details_topic').text
       # puts name
+      result = html_doc.at_css('#recipe_list_content > div.recipe-content-area > div.recipe-inner-content-area > div.inner-recipie1 > div.inner-recipie1-sec-1 > a.gallery_click > img')
+      if result
+        puts result.attr('src')
+      else
+        next
+      end
       imagePath = html_doc.css('#recipe_list_content > div.recipe-content-area > div.recipe-inner-content-area > div.inner-recipie1 > div.inner-recipie1-sec-1 > a.gallery_click > img').attr('src')
       ingredients = []
       ingredientsDiv = html_doc.css('#desktop_show_detail > div.inner-recipie2.ingredients > div.inner-recipie2-sec1 > div > div.block_style_1.block_style_common').map do |node|
@@ -30,10 +36,6 @@ namespace :dayday do
       }
 
       puts english_main_dish.to_json
-
-      
-
-
     end
   end
 end
