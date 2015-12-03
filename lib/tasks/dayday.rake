@@ -13,7 +13,7 @@ namespace :dayday do
       # puts name
       result = html_doc.at_css('#recipe_list_content > div.recipe-content-area > div.recipe-inner-content-area > div.inner-recipie1 > div.inner-recipie1-sec-1 > a.gallery_click > img')
       if result
-        puts result.attr('src')
+        imagePath = result.attr('src')
       else
         next
       end
@@ -24,9 +24,17 @@ namespace :dayday do
           # ingredients.push(text.to_s)
         end
       end
-      mainDishDescription = html_doc.css('#recipe_list_content > div.recipe-content-area > div.recipe-inner-content-area > div.inner-recipie1 > div.breif_desc > p').text
+      if result = html_doc.at_css('#recipe_list_content > div.recipe-content-area > div.recipe-inner-content-area > div.inner-recipie1 > div.breif_desc > p')
+        mainDishDescription = result.text
+      else
+        next
+      end
       ingredients = ingredientsDiv[0]
-      ingredients = ingredients.split("\r\n\r\n")
+      if ingredients.is_a?(String)
+        ingredients = ingredients.split("\r\n\r\n")
+      else
+        next
+      end
       english_main_dish = {
         "mainDishDescription": mainDishDescription,
         "imagePath": imagePath.text,
