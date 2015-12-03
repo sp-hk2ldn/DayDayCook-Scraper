@@ -172,9 +172,6 @@ http://www.daydaycook.com/recipe/sc/details/35831/index.html
 http://www.daydaycook.com/recipe/en/details/35671/index.html
 http://www.daydaycook.com/recipe/tc/details/35671/index.html
 http://www.daydaycook.com/recipe/sc/details/35671/index.html
-http://www.daydaycook.com/recipe/en/details/35431/index.html
-http://www.daydaycook.com/recipe/tc/details/35431/index.html
-http://www.daydaycook.com/recipe/sc/details/35431/index.html
 http://www.daydaycook.com/recipe/en/details/35231/index.html
 http://www.daydaycook.com/recipe/tc/details/35231/index.html
 http://www.daydaycook.com/recipe/sc/details/35231/index.html
@@ -220,9 +217,6 @@ http://www.daydaycook.com/recipe/sc/details/34821/index.html
 http://www.daydaycook.com/recipe/en/details/35661/index.html
 http://www.daydaycook.com/recipe/tc/details/35661/index.html
 http://www.daydaycook.com/recipe/sc/details/35661/index.html
-http://www.daydaycook.com/recipe/en/details/35421/index.html
-http://www.daydaycook.com/recipe/tc/details/35421/index.html
-http://www.daydaycook.com/recipe/sc/details/35421/index.html
 http://www.daydaycook.com/recipe/en/details/35521/index.html
 http://www.daydaycook.com/recipe/tc/details/35521/index.html
 http://www.daydaycook.com/recipe/sc/details/35521/index.html
